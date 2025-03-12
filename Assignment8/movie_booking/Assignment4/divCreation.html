@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div Creation</title>
+    <style>
+        #create-div {
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: lightgray;
+            transition: background-color 0.3s;
+        }
+
+        #create-div:hover {
+            background-color: darkgray;
+        }
+
+        .new-div {
+            border: 2px solid blue;
+            background-color: lightblue;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <button id="create-div">Create Div</button>
+
+    <script>
+        const createDivButton = document.getElementById('create-div');
+        createDivButton.addEventListener('click', () => {
+            const newDiv = document.createElement('div');
+            newDiv.textContent = 'This is a new div';
+            newDiv.classList.add('new-div');
+            document.body.appendChild(newDiv);
+        });
+    </script>
+</body>
+</html>

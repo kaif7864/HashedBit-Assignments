@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic CSS Changer</title>
+    <style>
+        #styled-div {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightgray;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <label for="bg-color">Background Color:</label>
+    <select id="bg-color">
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightcoral">Light Coral</option>
+        <option value="lightgray">Light Gray</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="pink">Pink</option>
+        <option value="violet">Violet</option>
+        <option value="aqua">Aqua</option>
+        <option value="gold">Gold</option>
+    </select>
+    
+    <label for="padding">Padding (px):</label>
+    <select id="padding">
+        <option value="10">10px</option>
+        <option value="20">20px</option>
+        <option value="30">30px</option>
+        <option value="40">40px</option>
+        <option value="50">50px</option>
+        <option value="60">60px</option>
+    </select>
+    
+    <label for="font-size">Font Size (px):</label>
+    <select id="font-size">
+        <option value="16">16px</option>
+        <option value="20">20px</option>
+        <option value="24">24px</option>
+        <option value="28">28px</option>
+        <option value="32">32px</option>
+        <option value="36">36px</option>
+    </select>
+    
+    <button id="apply-style">Apply Style</button>
+    
+    <div id="styled-div">This div's style will change.</div>
+
+    <script>
+        const applyStyleButton = document.getElementById('apply-style');
+        const styledDiv = document.getElementById('styled-div');
+        
+        applyStyleButton.addEventListener('click', () => {
+            const bgColor = document.getElementById('bg-color').value;
+            const padding = document.getElementById('padding').value;
+            const fontSize = document.getElementById('font-size').value;
+            
+            styledDiv.style.backgroundColor = bgColor;
+            styledDiv.style.padding = `${padding}px`;
+            styledDiv.style.fontSize = `${fontSize}px`;
+        });
+    </script>
+</body>
+</html>
