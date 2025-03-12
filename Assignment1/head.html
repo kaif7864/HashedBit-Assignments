@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .social-links a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .menu {
+            
+            padding: 10px;
+            text-align: center;
+        }
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .content {
+            width: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            width: 30%;
+            background: #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+.img{
+	height: 15px;
+	width:15px;}
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">My Website</div>
+        
+       <div class="menu">
+        <a href="#">Home </a>
+        <a href="#"> About </a>
+        <a href="#"> Services </a>
+        <a href="#"> Contact </a>
+</div>
+
+<div class="social-links">
+            <a href="https://www.facebook.com/hashedbitinnovations/"><img class="img" src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png">Facebook</a>
+            <a href="https://www.instagram.com/hashedbit/"><img class="img" src="https://cdn-icons-png.flaticon.com/128/15707/15707749.png">Instagram</a>
+            <a href="https://in.linkedin.com/company/hashedbit-innovations"><img class="img" src="https://cdn-icons-png.flaticon.com/128/145/145807.png">LinkedIn</a>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Sidebar Content</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam necessitatibus exercitationem, eius delectus, iure quaerat rerum modi eos dolore dolor, labore culpa qui mollitia ratione autem quisquam voluptatem iusto esse provident minima. Qui magnam accusantium officiis fugiat unde totam, enim voluptatibus aut dolores, illum consectetur rem recusandae corrupti excepturi deleniti id quibusdam, ratione sint aspernatur quos atque! Illo dolore voluptas nulla totam eligendi accusantium laborum, rem, aperiam nihil autem facilis amet officia, delectus perferendis? Voluptatem, molestias mollitia repellat quidem, voluptatum culpa incidunt officia odio obcaecati excepturi error magni accusamus veritatis suscipit nulla maxime in hic vitae illo voluptas optio enim?</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <h3> Colosseum </h3>
+                <img src="https://th.bing.com/th?id=ODL.9b875c492c8db73f0995c9dacaa66216&w=160&h=112&c=10&rs=1&qlt=99&o=6&dpr=1.6&pid=AlgoBlockDebug" alt="Image 1">
+                <p>The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age. Construction began under the Emperor Vespasian in 72 and was completed in AD 80 under his successor and heir, Titus. Further modifications were made during the reign of Domitian. The three emperors who were patrons of the work are known as the Flavian dynasty, and the amphitheatre was named the Flavian Amphitheatre by later classicists and archaeologists for its association with their family name.</p>
+            </div>
+            <div class="box">
+                <h3>Taj Mahal</h3>
+                <img src="https://th.bing.com/th?id=OSK.HEROXc8hMxLVsne8ysn4W8WbyIq2uGCAehK7li5twe-xemY&w=296&h=176&c=1&rs=2&o=6&dpr=1.6&pid=SANGAM" alt="Image 2">
+                <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Christ the Redeemer</h3>
+                <img src="https://th.bing.com/th/id/OIP.e45jApuEYSlhyP-BkDpPsgHaE8?w=240&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="Image 3" style="height: fit-content;">
+                <p>Christ the Redeemer is an Art Deco statue of Jesus in Rio de Janeiro, Brazil, created by French-Polish sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida sculpted the face. Constructed between 1922 and 1931, the statue is 30 metres high, excluding its 8-metre pedestal. The arms stretch 28 metres wide. It is made of reinforced concrete and soapstone.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 My Website. All rights reserved.
+    </div>
+
+</body>
+</html>

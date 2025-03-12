@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hide/Show Paragraph</title>
+</head>
+<body>
+    <button id="toggle-paragraph">Hide Paragraph</button>
+    <p id="paragraph">This is a paragraph that can be hidden or shown.</p>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-paragraph');
+        const paragraph = document.getElementById('paragraph');
+
+        toggleButton.addEventListener('click', () => {
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+                toggleButton.textContent = 'Hide Paragraph';
+            } else {
+                paragraph.style.display = 'none';
+                toggleButton.textContent = 'Show Paragraph';
+            }
+        });
+    </script>
+</body>
+</html>
